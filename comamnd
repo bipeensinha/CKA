@@ -4,3 +4,5 @@ kubectl get --raw /api/v1/namespaces/default/pods | jq .
 #Get details for a single Pod
 kubectl get --raw /api/v1/namespaces/default/pods/nginx-deploy-7bb7c8dfb9-tdb4p | jq .
 
+https://debu787yu.blob.core.windows.net/data/CKAAD-Day1-5.zip
+
