@@ -8,3 +8,6 @@ https://debu787yu.blob.core.windows.net/data/CKAAD-Day1-5.zip
 
 command: ["nginx", "-g", "daemon off;"]
 
+https://debu787yu.blob.core.windows.net/data/Kubernetes-Persistant-Volume.docx
+
+https://debu787yu.blob.core.windows.net/data/PVandPVCin-POD.zip
