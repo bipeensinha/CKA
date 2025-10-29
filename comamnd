@@ -6,3 +6,5 @@ kubectl get --raw /api/v1/namespaces/default/pods/nginx-deploy-7bb7c8dfb9-tdb4p 
 
 https://debu787yu.blob.core.windows.net/data/CKAAD-Day1-5.zip
 
+command: ["nginx", "-g", "daemon off;"]
+
