@@ -17,3 +17,6 @@ kubectl exec -it myapp-dev -c myapp-container -- /bin/sh
 
 https://debu787yu.blob.core.windows.net/data/Network-Policies.zip
 
+kubectl run nginx --image=nginx --restart=Never --labels="app=nginx" --command -- nginx -g 'daemon off;'
+
+
