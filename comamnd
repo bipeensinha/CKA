@@ -11,3 +11,7 @@ command: ["nginx", "-g", "daemon off;"]
 https://debu787yu.blob.core.windows.net/data/Kubernetes-Persistant-Volume.docx
 
 https://debu787yu.blob.core.windows.net/data/PVandPVCin-POD.zip
+
+kubectl get pod myapp-dev -o jsonpath='{.spec.containers[*].name}'
+kubectl exec -it myapp-dev -c myapp-container -- /bin/sh
+
