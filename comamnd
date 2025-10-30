@@ -15,3 +15,5 @@ https://debu787yu.blob.core.windows.net/data/PVandPVCin-POD.zip
 kubectl get pod myapp-dev -o jsonpath='{.spec.containers[*].name}'
 kubectl exec -it myapp-dev -c myapp-container -- /bin/sh
 
+https://debu787yu.blob.core.windows.net/data/Network-Policies.zip
+
