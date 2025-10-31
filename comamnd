@@ -19,4 +19,4 @@ https://debu787yu.blob.core.windows.net/data/Network-Policies.zip
 
 kubectl run nginx --image=nginx --restart=Never --labels="app=nginx" --command -- nginx -g 'daemon off;'
 
-
+https://drive.google.com/file/d/1IBc8HC_EMBI2C0diXCF5ILHFXqlpO59V/view?usp=drive_link
