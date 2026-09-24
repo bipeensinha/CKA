@@ -137,7 +137,31 @@ sudo chmod -R 755 /etc/kubernetes/admin.conf
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.27.0/manifests/calico.yaml
 
 
+===================
+## Shutdown — Control Plane + Worker
 
+## Control Plane:
+
+sudo systemctl stop kubelet
+sudo systemctl stop containerd
+sudo shutdown -h now
+
+## Worker Node(s):
+
+sudo systemctl stop kubelet
+sudo systemctl stop containerd
+sudo shutdown -h now
+
+## Start — Control Plane first
+sudo systemctl start containerd
+sudo systemctl start kubelet
+
+## Then start Worker Node(s)
+sudo systemctl start containerd
+sudo systemctl start kubelet
+## Verify from Control Plane
+kubectl get nodes
+kubectl get pods -A
 ================
 
 Deploy an app
